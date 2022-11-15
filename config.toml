@@ -40,15 +40,15 @@ description = "<b>REPLACE HERE:</b> I am a software engineer with 5+ years of ex
 [[params.social]]
 icon = "github"
 name = "Github"
-url = "https://github.com/gohugoio"
+url = "https://google.com/"
 [[params.social]]
 icon = "twitter"
 name = "Twitter"
-url = "https://twitter.com/gohugoio"
+url = "https://google.com/"
 [[params.social]]
-icon = "airplay"
+icon = "linkedin"
 name = "Linkedin"
-url = "https://twitter.com/gohugoio"
+url = "https://google.com/"
 [params.style]
 darkestColor = "#ffffff"
 darkColor = "rgb(248,250,252)"
