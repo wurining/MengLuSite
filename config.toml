@@ -1,0 +1,58 @@
+# Global settings
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+uglyurls = false
+title = 'Meng Lu (Ivan) - Resume'
+theme = "m10c"
+paginate = 20
+# Taxonomies
+[taxonomies]
+category = 'categories'
+tag = 'tags'
+# Menu
+[menu]
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/#main"
+weight = 1
+[[menu.main]]
+identifier = "education"
+name = "Education"
+url = "/#education"
+weight = 2
+[[menu.main]]
+identifier = "industry"
+name = "Industry"
+url = "/#industry"
+weight = 3
+# Parameters
+[params]
+author = "Meng Lu (Ivan)"
+avatar = "https://cdn.hk01.com/di/media/images/dw/20200418/328268182366326785.jpeg/D3tP81IjM5QUbFgzwLuR8bYk76pxJakLlvYbh5b2G4c?v=w640"
+menu_item_separator = "-"
+favicon = "/favicon.png"
+
+phone = "+1 (347) 886-2071"
+email = "ivan.lu.usa@gmail.com"
+address = "172 Madison Ave, New York, United States"
+description = "<b>REPLACE HERE:</b> I am a software engineer with 5+ years of experience in the industry. I am currently working as a software engineer at Bloomberg LP. I am also a graduate student at Columbia University. I am interested in distributed systems, machine learning, and cloud computing."
+[[params.social]]
+icon = "github"
+name = "Github"
+url = "https://github.com/gohugoio"
+[[params.social]]
+icon = "twitter"
+name = "Twitter"
+url = "https://twitter.com/gohugoio"
+[[params.social]]
+icon = "airplay"
+name = "Linkedin"
+url = "https://twitter.com/gohugoio"
+[params.style]
+darkestColor = "#ffffff"
+darkColor = "rgb(248,250,252)"
+lightColor = "#0a1922"
+lightestColor = "#0a1922"
+# primaryColor = "rgb(5,148,203)"
+primaryColor = "#5594ac"
