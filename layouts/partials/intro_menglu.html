@@ -32,29 +32,9 @@
             {{ range .Page.Params.education.item }}
             <li>
                 <p><b>{{ .degree }}</b>,<i>{{ .school }}</i><span class="loc-label">{{ .location }}</span></p>
-                <p>GPA: {{ .gpa | safeHTML }} <span class="data-label">{{ time.Format "01/2006" .start }} -
+                <p><span style="visibility: hidden;">GPA: {{ .gpa | safeHTML }}</span> <span
+                        class="data-label">{{ time.Format "01/2006" .start }} -
                         {{if .end}}{{ time.Format "01/2006" .end }}{{ else }}Present{{ end }}</span></p>
-                <!-- <div>
-                    {{ .Page.Content }}
-                </div> -->
-            </li>
-            {{ end }}
-        </ul>
-    </section>
-
-
-    <section class="research">
-        <h2>{{.Page.Params.research.name}}</h2>
-        <ul>
-            {{ range .Site.Taxonomies.categories.researchexperience }}
-            <li>
-                <a href="{{ .Page.RelPermalink }}">
-                    <p>{{ .Page.Params.institution }} <span
-                            class="data-label">{{ time.Format "01/2006" .Page.Params.start }} -
-                            {{if .Page.Params.end}}{{ time.Format "01/2006" .Page.Params.end }}{{ else }}Present{{ end
-                            }}</span></p>
-                </a>
-                <p><i>{{ .Page.Params.position }}</i> <span class="loc-label">{{ .Page.Params.city }}</span></p>
                 <!-- <div>
                     {{ .Page.Content }}
                 </div> -->
@@ -77,6 +57,26 @@
                 <p><i>Supervisor: {{ .supervisors }}</i></p>
             </li>
             {{ end }}
+    </section>
+
+    <section class="research">
+        <h2>{{.Page.Params.research.name}}</h2>
+        <ul>
+            {{ range .Site.Taxonomies.categories.researchexperience }}
+            <li>
+                <a href="{{ .Page.RelPermalink }}">
+                    <p>{{ .Page.Params.institution }} <span
+                            class="data-label">{{ time.Format "01/2006" .Page.Params.start }} -
+                            {{if .Page.Params.end}}{{ time.Format "01/2006" .Page.Params.end }}{{ else }}Present{{ end
+                            }}</span></p>
+                </a>
+                <p><i>{{ .Page.Params.position }}</i> <span class="loc-label">{{ .Page.Params.city }}</span></p>
+                <!-- <div>
+                    {{ .Page.Content }}
+                </div> -->
+            </li>
+            {{ end }}
+        </ul>
     </section>
 
     <section class="industry" id="industry">

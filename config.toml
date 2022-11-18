@@ -49,6 +49,15 @@ url = "https://google.com/"
 icon = "linkedin"
 name = "Linkedin"
 url = "https://google.com/"
+[[params.download]]
+name = "CV"
+assest = "pdf/cv.pdf"
+icon = "download"
+[[params.download]]
+name = "Project Description"
+assest = "pdf/project-description.pdf"
+icon = "download"
+
 [params.style]
 darkestColor = "#ffffff"
 darkColor = "rgb(248,250,252)"

@@ -37,6 +37,28 @@ html {
     }
 }
 
+.app-header-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    font-size: 1em;
+    color: $lightest-color;
+    margin-bottom: 0.5em;
+
+    p {
+        margin: 0.2em 0;
+    }
+
+    a:not(:last-child) {
+        margin-right: 0.4em;
+    }
+
+    span {
+        font-size: 1em;
+    }
+}
+
 .data-label {
     float: right;
     font-weight: bold;
