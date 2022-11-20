@@ -7,23 +7,6 @@
         <!-- 研究兴趣 -->
         <h2>{{.Page.Params.research_interests.name}}</h2>
         <p>{{delimit (.Page.Params.research_interests.tags) ", " }}</p>
-        <!-- 技能 -->
-        <h2>{{.Page.Params.skills.name}}</h2>
-        {{range .Page.Params.skills.item}}
-        <p><b>{{.name}}:</b> {{.content}}</p>
-        {{end}}
-        <!-- 奖项 -->
-        <h2>{{.Page.Params.awards.name}}</h2>
-        {{range .Page.Params.awards.item}}
-        <p><b>{{.title}}</b>, <i>{{.institution}}</i> <span class="data-label">{{ time.Format "01/2006" .start }} -
-                {{if .end}}{{ time.Format "01/2006" .end }}{{ else }}Present{{ end }}</span>
-        </p>
-        {{end}}
-        <!-- 成员 -->
-        <h2>{{.Page.Params.memberships.name}}</h2>
-        {{range .Page.Params.memberships.item}}
-        <p>{{.}}</p>
-        {{end}}
     </section>
 
     <section class="education" id="education">
@@ -48,13 +31,18 @@
         <ul>
             {{ range .Page.Params.publications.item }}
             <li>
-                <a {{if .link}}href="{{.link}}" {{end}} target="_blank">
-                    <p>{{ .title }}<i>({{ .subtitle }})</i> <span class="data-label">{{ time.Format "01/2006" .start }}
-                            -
-                            {{if .end}}{{ time.Format "01/2006" .end }}{{ else }}Present{{ end
-                            }}</span></p>
-                </a>
-                <p><i>Supervisor: {{ .supervisors }}</i></p>
+                {{if eq .link ""}}<a {{if .link}}href="{{.link}}" {{end}} target="_blank">
+                    {{else}}
+                        {{ $file := resources.Get .link }}
+                        <a href="{{$file.RelPermalink}}" download="{{.title}}" rel="noreferrer noopener me">
+                            {{end}}
+                            <p>{{ .title }}<i>({{ .subtitle }})</i> <span
+                                    class="data-label">{{ time.Format "01/2006" .start }}
+                                    -
+                                    {{if .end}}{{ time.Format "01/2006" .end }}{{ else }}Present{{ end
+                                    }}</span></p>
+                        </a>
+                        <p><i>Supervisor: {{ .supervisors }}</i></p>
             </li>
             {{ end }}
     </section>
@@ -111,5 +99,25 @@
                 <p>{{ .description }}</p>
             </li>
             {{ end }}
+    </section>
+
+    <section class="extra">
+        <!-- 技能 -->
+        <h2>{{.Page.Params.skills.name}}</h2>
+        {{range .Page.Params.skills.item}}
+        <p><b>{{.name}}:</b> {{.content}}</p>
+        {{end}}
+        <!-- 奖项 -->
+        <h2>{{.Page.Params.awards.name}}</h2>
+        {{range .Page.Params.awards.item}}
+        <p><b>{{.title}}</b>, <i>{{.institution}}</i> <span class="data-label">{{ time.Format "01/2006" .start }} -
+                {{if .end}}{{ time.Format "01/2006" .end }}{{ else }}Present{{ end }}</span>
+        </p>
+        {{end}}
+        <!-- 成员 -->
+        <h2>{{.Page.Params.memberships.name}}</h2>
+        {{range .Page.Params.memberships.item}}
+        <p>{{.}}</p>
+        {{end}}
     </section>
 </div>

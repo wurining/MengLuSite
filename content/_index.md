@@ -38,7 +38,7 @@ supervisors = "Doctoral Candidate Chengjie Zheng and Dr. Tian Wu, University of 
 start = "2021-09-01"
 #end = ""
 major = "IEEE Transactions on Pattern Analysis and Machine Intelligence"
-link = "https://scholar.google.com/"
+link = "pdf/publications1.pdf"
 [[publications.item]]
 title = "FASTATTACKER Against Fact Verification"
 subtitle = "in submission"
@@ -46,7 +46,7 @@ supervisors = "Dr. Di Jin, Amazon Alexa AI"
 start = "2021-03-01"
 #end = ""
 major = ""
-link = "https://scholar.google.com/"
+link = ""
 [[publications.item]]
 title = "Predicting the Compaction Condition of Asphalt Based on Particle Kinematics"
 subtitle = "in submission"
@@ -54,7 +54,7 @@ supervisors = "Doctoral Candidate Shuai Yu and Dr. Shihui Shen, Pennsylvania Sta
 start = "2021-05-01"
 end = "2022-08-01"
 major = ""
-link = "https://scholar.google.com/"
+link = ""
 [[publications.item]]
 title = "Automated Machine Learning-Based Radiomics Analysis Versus Deep Learning-Based Classification for Thyroid Nodule on Ultrasound Images: A Multi-Center Study"
 subtitle = "IEEE-BIBE 2022"
@@ -63,7 +63,7 @@ institution = "Icahn School of Medicine at Mount Sinai"
 start = "2022-02-01"
 end = "2022-08-01"
 major = ""
-link = "https://scholar.google.com/"
+link = ""
 
 # research interests
 [research_interests]
