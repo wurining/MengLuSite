@@ -29,26 +29,18 @@ weight = 3
 # Parameters
 [params]
 author = "Meng Lu (Ivan)"
-avatar = "https://cdn.hk01.com/di/media/images/dw/20200418/328268182366326785.jpeg/D3tP81IjM5QUbFgzwLuR8bYk76pxJakLlvYbh5b2G4c?v=w640"
+# avatar = ""
 menu_item_separator = "-"
-favicon = "/favicon.png"
+favicon = "favicon.png"
 
 phone = "+1 (347) 886-2071"
 email = "ivan.lu.usa@gmail.com"
 address = "172 Madison Ave, New York, United States"
-description = "<b>REPLACE HERE:</b> I am a software engineer with 5+ years of experience in the industry. I am currently working as a software engineer at Bloomberg LP. I am also a graduate student at Columbia University. I am interested in distributed systems, machine learning, and cloud computing."
-[[params.social]]
-icon = "github"
-name = "Github"
-url = "https://google.com/"
-[[params.social]]
-icon = "twitter"
-name = "Twitter"
-url = "https://google.com/"
+description = "Experienced in <b>Machine Learning/Natural Language Processing/Computer Vision</b> with demonstrated working experience at the National Laboratory of Pattern Recognition, Chinese Academy of Sciences. Skilled in Pytorch/Python, VBA, Python, Matlab, MySQL, C/C++, creating adversarial attack algorithms, and generating data mining--recommender system tasks. Information extraction from biomedical language and healthcare informatics. <br>Strong computer science and quantitative finance professional with one Master of Science (M.S.) focused in computer science from Northwestern University, and one Master of Science focused on Quantitative Finance from Lancaster University, UK. <br>Green Card Holder."
 [[params.social]]
 icon = "linkedin"
 name = "Linkedin"
-url = "https://google.com/"
+url = "https://www.linkedin.com/in/l-ivan-499092166?trk=public_profile_browsemap_profile-result-card_result-card_full-click"
 [[params.download]]
 name = "CV"
 assest = "pdf/cv.pdf"
