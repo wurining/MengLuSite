@@ -120,4 +120,21 @@
         <p>{{.}}</p>
         {{end}}
     </section>
+
+    <section class="transcript">
+
+        <h2>{{.Page.Params.transcript.name}}</h2>
+        <!-- 成绩单下载 -->
+        {{- with .Page.Params.transcript.item }}
+        {{ range . }}
+        {{ $file := resources.Get .link }}
+        <p>
+            <a href="{{$file.RelPermalink}}" download="{{$file.Name}}" rel="noreferrer noopener me">
+                {{ partial "icon.html" (dict "ctx" $ "name" .icon) }}
+                <span>Download: {{.name}}</span>
+            </a>
+        </p>
+        {{ end}}
+        {{- end }}
+    </section>
 </div>

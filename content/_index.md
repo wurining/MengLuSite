@@ -135,4 +135,20 @@ content = "Chinese (Native), English (Fluent)"
 [[skills.item]]
 name = "Interests"
 content = "Basketball, Reading, Cooking, Fitness"
+
+# transcript
+[transcript]
+name = "TRANSCRIPTS"
+[[transcript.item]]
+name = "Northwestern University"
+link = "pdf/nu-transcript.pdf"
+icon = "download"
+[[transcript.item]]
+name = "Lancaster University"
+link = "pdf/lan-transcript.pdf"
+icon = "download"
+[[transcript.item]]
+name = "Hefei University of Technology"
+link = "pdf/hf-transcript.pdf"
+icon = "download"
 +++
