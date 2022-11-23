@@ -38,7 +38,7 @@ supervisors = "Doctoral Candidate Chengjie Zheng and Dr. Tian Wu, University of 
 start = "2021-09-01"
 #end = ""
 major = "IEEE Transactions on Pattern Analysis and Machine Intelligence"
-link = "pdf/publications1.pdf"
+link = ""
 [[publications.item]]
 title = "FASTATTACKER Against Factual Verification"
 subtitle = "in submission"
@@ -63,7 +63,7 @@ institution = "Icahn School of Medicine at Mount Sinai"
 start = "2022-02-01"
 end = "2022-08-01"
 major = ""
-link = ""
+link = "pdf/publications1.pdf"
 
 # research interests
 [research_interests]
